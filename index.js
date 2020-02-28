@@ -16,3 +16,7 @@ function createEmployeeRecords(arrayOfArrays) {
   }
   return employeeRecords;
 }
+
+function createTimeInEvent(employeeRecord, dateTime) {
+  
+}
