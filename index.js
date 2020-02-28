@@ -59,3 +59,7 @@ function allWagesFor(employeeRecord) {
     return memo + wagesEarnedOnDate(employeeRecord, date);
   }, 0);
 }
+
+function calculatePayroll(employeeRecords) {
+  
+}
