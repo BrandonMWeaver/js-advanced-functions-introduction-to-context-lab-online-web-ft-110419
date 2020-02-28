@@ -26,3 +26,13 @@ function createTimeInEvent(employeeRecord, dateTime) {
   });
   return employeeRecord;
 }
+
+function createTimeOutEvent(employeeRecord, dateTime) {
+  let [date, hour] = dateTime.split(' ');
+  employeeRecord.timeOutEvents.push({
+    type: "TimeOut",
+    date: date,
+    hour: parseInt(hour, 10)
+  });
+  return employeeRecord;
+}
