@@ -19,7 +19,6 @@ function createEmployeeRecords(arrayOfArrays) {
 
 function createTimeInEvent(employeeRecord, dateTime) {
   let [date, hour] = dateTime.split(' ');
-  
   employeeRecord.timeInEvents.push({
     type: "TimeIn",
     date: date,
