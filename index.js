@@ -36,3 +36,7 @@ function createTimeOutEvent(employeeRecord, dateTime) {
   });
   return employeeRecord;
 }
+
+function hoursWorkedOnDate(employeeRecord) {
+  
+}
