@@ -65,3 +65,7 @@ function calculatePayroll(employeeRecords) {
     return memo + allWagesFor(employeeRecord);
   }, 0);
 }
+
+function findEmployeeByFirstName(employeeRecords, firstName) {
+  return 
+}
