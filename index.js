@@ -46,3 +46,5 @@ function hoursWorkedOnDate(employeeRecord, date) {
   });
   return (timeOutEvent.hour - timeInEvent.hour) / 100;
 }
+
+function wagesEarnedOnDate(employeeRecord, rate)
