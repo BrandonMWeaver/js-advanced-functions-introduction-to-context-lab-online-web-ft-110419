@@ -63,5 +63,5 @@ function allWagesFor(employeeRecord) {
 function calculatePayroll(employeeRecords) {
   return employeeRecords.reduce(function(memo, employeeRecord) {
     return memo + allWagesFor(employeeRecord);
-  });
+  }, 0);
 }
