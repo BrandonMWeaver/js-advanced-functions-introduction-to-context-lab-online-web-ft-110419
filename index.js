@@ -38,7 +38,7 @@ function createTimeOutEvent(employeeRecord, dateTime) {
 }
 
 function hoursWorkedOnDate(employeeRecord, date) {
-  let TimeInEvent = employeeRecord.TimeInEvents.find(function(TimeIn) {
-    
-  })
+  let timeInEvent = employeeRecord.timeInEvents.find(function(timeIn) {
+    ti
+  });
 }
