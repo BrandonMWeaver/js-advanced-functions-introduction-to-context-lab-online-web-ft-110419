@@ -48,5 +48,5 @@ function hoursWorkedOnDate(employeeRecord, date) {
 }
 
 function wagesEarnedOnDate(employeeRecord, date) {
-  
+  return hoursWorkedOnDate(employeeRecord, date) * employeeRecord.payPerHour;
 }
