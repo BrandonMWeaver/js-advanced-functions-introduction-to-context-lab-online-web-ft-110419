@@ -50,3 +50,11 @@ function hoursWorkedOnDate(employeeRecord, date) {
 function wagesEarnedOnDate(employeeRecord, date) {
   return hoursWorkedOnDate(employeeRecord, date) * employeeRecord.payPerHour;
 }
+
+function allWagesFor(employeeRecord, dates) {
+  total = 0;
+  for (const date of dates) {
+    total += hoursWorkedOnDate(employeeRecord, date) * employeeRecord.payPerHour;
+  }
+  return total;
+}
