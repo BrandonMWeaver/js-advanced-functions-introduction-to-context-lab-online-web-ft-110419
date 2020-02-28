@@ -55,4 +55,5 @@ function allWagesFor(employeeRecord) {
   const dates = employeeRecord.timeInEvents.map(function(timeIn) {
     return timeIn.date;
   });
+  return dates.
 }
