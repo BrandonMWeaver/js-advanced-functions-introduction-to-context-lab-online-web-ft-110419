@@ -18,7 +18,7 @@ function createEmployeeRecords(arrayOfArrays) {
 }
 
 function createTimeInEvent(employeeRecord, dateTime) {
-  let [date, hour] = dateTime.split(' ');
+  const [date, hour] = dateTime.split(' ');
   employeeRecord.timeInEvents.push({
     type: "TimeIn",
     date: date,
@@ -28,7 +28,7 @@ function createTimeInEvent(employeeRecord, dateTime) {
 }
 
 function createTimeOutEvent(employeeRecord, dateTime) {
-  let [date, hour] = dateTime.split(' ');
+  const [date, hour] = dateTime.split(' ');
   employeeRecord.timeOutEvents.push({
     type: "TimeOut",
     date: date,
@@ -38,7 +38,10 @@ function createTimeOutEvent(employeeRecord, dateTime) {
 }
 
 function hoursWorkedOnDate(employeeRecord, date) {
-  let timeInEvent = employeeRecord.timeInEvents.find(function(timeIn) {
-    return timeIn.date == date;
+  const timeInEvent = employeeRecord.timeInEvents.find(function(timeIn) {
+    return timeIn.date === date;
+  });
+  const timeOutEvent = employeeRecord.timeOutEvents.find(function(timeOut) {
+    return timeOut.date === date;
   });
 }
