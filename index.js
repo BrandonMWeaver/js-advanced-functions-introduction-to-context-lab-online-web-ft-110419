@@ -56,6 +56,6 @@ function allWagesFor(employeeRecord) {
     return timeIn.date;
   });
   return dates.reduce(function(memo, date) {
-    
-  })
+    return memo + wagesEarnedOnDate()
+  });
 }
