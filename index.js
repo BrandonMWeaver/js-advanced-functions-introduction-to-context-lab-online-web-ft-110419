@@ -52,5 +52,5 @@ function wagesEarnedOnDate(employeeRecord, date) {
 }
 
 function allWagesFor(employeeRecord) {
-  const dates = 
+  const dates = employeeRecord.
 }
