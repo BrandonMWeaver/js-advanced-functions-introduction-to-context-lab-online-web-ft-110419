@@ -53,7 +53,7 @@ function wagesEarnedOnDate(employeeRecord, date) {
 
 function allWagesFor(employeeRecord, dates) {
   let total = 0;
-  for (const date of dates) {
+  for (const date in dates) {
     total += hoursWorkedOnDate(employeeRecord, date) * employeeRecord.payPerHour;
   }
   return total;
