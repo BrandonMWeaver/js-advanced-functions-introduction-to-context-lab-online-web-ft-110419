@@ -21,7 +21,7 @@ function createTimeInEvent(employeeRecord, dateTime) {
   let [date, hour] = dateTime.split(' ');
   
   return employeeRecord.timeInEvents.push({
-    type: 
+    type: "TimeIn",
     date,
     hour: parseInt(hour, 10)
   });
