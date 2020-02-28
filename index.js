@@ -22,6 +22,6 @@ function createTimeInEvent(employeeRecord, dateTime) {
   
   return employeeRecord.timeInEvents.push({
     date,
-    
+    hour: parseInt(hour, 10)
   });
 }
